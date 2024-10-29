@@ -20,6 +20,8 @@ function mostra(texto){
 
 mostra('Número de pontos do meu time no Brasileirão ')
 
+let nomeTime = prompt('Qual o nome do seu time')
+
 let vitorias = prompt('Quantas vitorias o seu time obteve durante o campeonato?')
 
 let empates = prompt('Quantos empates seu time teve')
@@ -29,9 +31,14 @@ let derrotas = prompt('Quantas vezes seu time perdeu')
 let pontuacao = parseInt(vitorias * 3) + parseInt(empates)
 
 mostra(`O ${nomeTime} obteve um total de ${pontuacao} pontos`)
-Isaq
+
+if(pontuacao > 80){
+    mostra('Parabéns, seu time passou para a série A do Brasileirão')
+
+}
+else if(pontuação < 20){
     mostra('Infelizmente sue time foi rebaixado')
-else {
+}else {
    mostra('Seu time continua na série B')
 }
 
