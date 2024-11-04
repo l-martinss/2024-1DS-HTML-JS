@@ -4,45 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pontuação de Time</title>
+    <title> Pontuação de Time</title>
 </head>
 <body>
-
-       <script>
-function pulaLinha(){
+    <script>     
+ function pulaLinha(){
     document.write('<br><br>')
-}
+ }
 
-function mostra(texto){
+ function mostra(texto){
     document.write(texto)
     pulaLinha()
-}
+ } 
+ 
+ mostra(' Númeo de pontos do meu time no Brasileirão, serie B ')
 
-mostra('Número de pontos do meu time no Brasileirão ')
+ let nomeTime = prompt('Qual o nome do seu time')
+ let vitorias = prompt ('Quantas vitórias o seu time obteve durante o campeonato? ')
+ let empates = prompt('Quantos empates o seu time teve?')
+ let derrotas = prompt('Quantas vezes seu time perdeu?')
+ 
+ let pontuacao = parseInt(vitorias * 3) + parseInt(empates)
 
-let nomeTime = prompt('Qual o nome do seu time')
+ mostra(` O ${nomeTime} obteve um total de ${pontuacao} pontos`)
 
-let vitorias = prompt('Quantas vitorias o seu time obteve durante o campeonato?')
-
-let empates = prompt('Quantos empates seu time teve')
-
-let derrotas = prompt('Quantas vezes seu time perdeu')
-
-let pontuacao = parseInt(vitorias * 3) + parseInt(empates)
-
-mostra(`O ${nomeTime} obteve um total de ${pontuacao} pontos`)
-
-if(pontuacao > 80){
-    mostra('Parabéns, seu time passou para a série A do Brasileirão')
-
-}
-else if(pontuação < 20){
-    mostra('Infelizmente sue time foi rebaixado')
-}else {
-   mostra('Seu time continua na série B')
-}
-
-    </script>
-
+ if(pontuacao > 80){
+    mostra('Parabens, seu time passou para a série A do Brasileirão')
+ }  else if (pontuacao < 20){
+   mostra('Infelizmente seu time foi rebaixado')
+ }  else ('Seu continua na série B')
+ 
+ 
+  </script>
 </body>
 </html>
