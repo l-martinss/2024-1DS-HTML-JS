@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+*{
+margin: 0;
+padding: 0;
+
+}
+
+:root{
+    
+    --cor1: #ffd6ffff;
+    --cor2: #e7c6ffff;
+    --cor3: #c8b6ffff;
+    --cor4: #b8c0ffff;
+    --cor5: #bbd0ffff;
+
+body{
+      background-color: var(--cor1);
+      font-family: var(--fonte-texto);
+}
+
+header{
+    background-color: (--cor2);
+    padding: 2em;
+    color: var(--cor3);
+    text-align: center;
+    font-family: var(--fonte-titulo);
+    font-size: 1.5em;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+
+
+}
+footer a{
+    text-decoration: none;
+    color:var(--cor5);
+}
+}
